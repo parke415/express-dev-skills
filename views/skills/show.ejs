@@ -8,7 +8,8 @@
 </head>
 <body>
   <a href="/">Home</a> | <a href="/skills">Skill List</a>
-  <h1>Skill #<%= id + 1 %> Detail</h1>
+  <h1>Skill #<%= id + 1 %> Details</h1>
+  <a href="/skills/<%= id %>/edit">Edit Skill</a>
   <h3>Skill: <%= skill.skill %></h3>
   <h3>Level: <%= skill.level %></h3>
   <h3>Experience: <%= skill.experience %></h3>

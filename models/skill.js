@@ -11,8 +11,7 @@ module.exports = {
   getOne,
   create,
   deleteOne,
-  //edit,
-  //update
+  update
 }
 
 function getAll() {
@@ -32,4 +31,8 @@ function create(skill) {
 
 function deleteOne(idx) {
   skills.splice(idx, 1);
+}
+
+function update(idx, updatedSkill) {
+  Object.assign(skills[idx], updatedSkill);
 }
