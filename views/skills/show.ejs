@@ -3,16 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Express Skills</title>
+  <title>Skills</title>
   <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 <body>
-  <a href="/">Home</a> | <a href="/skills">Skill List</a>
+  <a href="/">Home</a> | <a href="/skills">Skills</a>
   <h1>Skill #<%= id + 1 %> Details</h1>
   <a href="/skills/<%= id %>/edit">Edit Skill</a>
+  <br>
   <h3>Skill: <%= skill.skill %></h3>
   <h3>Level: <%= skill.level %></h3>
   <h3>Experience: <%= skill.experience %></h3>
+  <br>
   <form action="/skills/<%= id %>?_method=DELETE" method="POST">
     <button type="submit">Delete Skill</button>
   </form>

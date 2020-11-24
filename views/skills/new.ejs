@@ -3,17 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Express Skills</title>
+  <title>Skills</title>
   <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 <body>
-  <a href="/">Home</a> | <a href="/skills">Skill List</a>
+  <a href="/">Home</a> | <a href="/skills">Skills</a>
   <h1>New Skill</h1>
   <form action="/skills" method="POST" autocomplete="off">
-    <div><input type="text" name="skill"> (skill)</div>
-    <div><input type="text" name="level"> (level)</div>
-    <div><input type="text" name="experience"> (experience)</div>
+    <div><input type="text" placeholder="skill name" name="skill"></div>
+    <br>
+    <div><input type="text" placeholder="level" name="level"></div>
+    <br>
+    <div><input type="text" placeholder="experience" name="experience"></div>
+    <br>
     <button type="submit">Add Skill</button>
   </form>
+  <br>
+  <a href="/skills">Cancel New Skill</a>
 </body>
 </html>

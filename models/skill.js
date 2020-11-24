@@ -34,5 +34,8 @@ function deleteOne(idx) {
 }
 
 function update(idx, updatedSkill) {
+  if (!updatedSkill.skill) updatedSkill.skill = "n/a";
+  if (!updatedSkill.level) updatedSkill.level = "n/a";
+  if (!updatedSkill.experience) updatedSkill.experience = "n/a";
   Object.assign(skills[idx], updatedSkill);
 }

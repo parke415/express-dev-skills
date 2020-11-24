@@ -3,18 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Express Skills</title>
+  <title>Skills</title>
   <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 <body>
-  <a href="/">Home</a> | <a href="/skills">Skill List</a>
+  <a href="/">Home</a> | <a href="/skills">Skills</a>
   <h1>Edit Skill #<%= id + 1 %></h1>
   <form action="/skills/<%= id %>?_method=PUT" method="POST" autocomplete="off">
-    <div><input type="text" name="skill" value="<%= skill.skill %>"> (skill)</div>
-    <div><input type="text" name="level" value="<%= skill.level %>"> (level)</div>
-    <div><input type="text" name="experience" value="<%= skill.experience %>"> (experience)</div>
+    <div><input type="text" placeholder="skill name" name="skill" value="<%= skill.skill %>"></div>
+    <br>
+    <div><input type="text" placeholder="level" name="level" value="<%= skill.level %>"></div>
+    <br>
+    <div><input type="text" placeholder="experience" name="experience" value="<%= skill.experience %>"></div>
+    <br>
     <button type="submit">Update Skill</button>
   </form>
+  <br>
   <a href="/skills/<%= id %>">Cancel Update</a>
 </body>
 </html>
